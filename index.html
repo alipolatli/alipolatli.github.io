@@ -120,4 +120,19 @@ Motorcycling & Touring, Tech Gadgets, Hardware & Networks, Self-Development
 </pre>
 
 </body>
+
+<script>
+    setInterval(function () {
+        const t = performance.now();
+        debugger;
+        if (performance.now() - t > 50) {
+            document.body.innerHTML =
+                    "<pre style='font-family:monospace; font-size:18px; text-align:center; margin-top:20%;'>" +
+                    "nothing interesting to see here.\n" +
+                    "</pre>";
+        }
+    }, 500);
+</script>
+
+
 </html>
